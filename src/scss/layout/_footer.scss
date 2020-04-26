@@ -1,0 +1,119 @@
+footer {
+  background-color: rgba(#855fa5, 1);
+  background-image: -moz-linear-gradient( -170deg, rgb(152,109,189) 0%, rgb(148,90,167) 100%);
+  background-image: -webkit-linear-gradient( -170deg, rgb(152,109,189) 0%, rgb(148,90,167) 100%);
+  background-image: -ms-linear-gradient( -170deg, rgb(152,109,189) 0%, rgb(148,90,167) 100%);
+
+  .container {
+    // Guide
+    // background-image: url("../img/guide/footer.jpg");
+
+    margin: 0 auto;
+    padding: 45px 45px;
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .link-container {
+      display: flex;
+      justify-content: center;
+      a, span {
+        color: #dbc3eb;
+        font-size: 18px;
+        letter-spacing: 0.08em;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        margin: 0 12px;
+      }
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p, span, a {
+        color: white;
+        font-size: 15.5px;
+        letter-spacing: 0.05em;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include screen(1300px) {
+  footer {
+    .container {
+      // Guide
+      // background-image: url("../img/guide/footer.jpg");
+
+      padding: percentage(45 / 1300) percentage(45 / 1300);
+
+      .link-container {
+        a, span {
+          font-size: 1.4vw;
+          letter-spacing: 0.08em;
+        }
+        span {
+          margin: 0 0.9vw;
+        }
+      }
+
+      .copyright {
+        p, span, a {
+          font-size: 1.2vw;
+          letter-spacing: 0.05em;
+        }
+      }
+    }
+  }
+}
+
+@include screen(1023px) {
+  footer {
+    .container {
+      // Guide
+      // background-image: url("../img/guide/footer_m.jpg");
+
+      padding: percentage(40 / 640) percentage(90 / 640);
+      flex-direction: column;
+
+      .link-container {
+        margin-bottom: 6.4vw;
+        width: 100%;
+        justify-content: space-between;
+        a, span {
+          font-size: 4vw;
+          letter-spacing: 0.08em;
+        }
+        span {
+          margin: 0;
+        }
+      }
+
+      .copyright {
+        width: 100%;
+        flex-direction: column;
+        line-height: 1.6;
+        p, a {
+          font-size: 3.3vw;
+          letter-spacing: 0.05em;
+        }
+        span {
+          display: none;
+        }
+        .t-2 {
+          font-size: 3vw;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}

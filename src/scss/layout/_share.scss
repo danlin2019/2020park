@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+TC:400,500,600,700&display=swap');
+// All
+
+//選取顏色
+// p,
+// h1,
+// h2,
+// h3,
+// h4,
+// b,
+// strong,
+// span,
+// li,
+// div,
+// a,
+// img,
+// tr,
+// td,
+// th {
+//   &::selection {
+//       color: #fff;
+//       background: #b81a28;
+//   }
+// }
+
+*, *:before, *:after{
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+
+
+html,body,h1,h2,h3,h4,h5,h6,p,b,div,span,iframe,ul,ol,li,img{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+html img {
+  max-width: 100%;
+};
+
+::-webkit-input-placeholder{
+  color: #aaa7a7;
+  line-height:normal ; 
+}
+
+
+::-moz-placeholder{
+  color: #aaa7a7;
+  line-height:normal  ;
+} 
+//移除 input type="date"箭頭
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type='date'],
+input[type='time'] {
+  -webkit-appearance: none;
+}
+input,select,textarea{
+  font-size: 18px;
+}
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../img/input-arrw.png) no-repeat scroll right center transparent;
+  // background-size: 26px;
+  padding: 0 10px;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 1.6px 2.5px 4.8px 0.3px rgba(174, 174, 174, 0.57);
+  border-radius: initial;
+  @include screen(767px) {
+    border-radius: 6px;
+    height: 45px;
+    background-size: 14px;
+    font-size: 15px;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input{
+  padding: 0 10px;
+  width: 100%;
+  height: 60px;
+  border-radius: 3px;
+  box-shadow: 1.6px 2.5px 4.8px 0.3px rgba(174, 174, 174, 0.57);
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+  @include screen(767px) {
+    height: 45px;
+  }
+}
+
+textarea {
+  box-shadow: 1.6px 2.5px 4.8px 0.3px rgba(174, 174, 174, 0.57);
+  width: 100%;
+  border: none;
+  padding: 10px;
+  height: 161px;
+  background-color: #ffffff;
+  @include screen(767px) {
+    border-radius: 6px;
+    font-size: 15px;
+  }
+}
+
+tr,th,td{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  line-height: 1em;
+  overflow: auto;
+  font-size: 1rem;
+  color: #474747;
+  word-break: break-word;
+  letter-spacing: .1em;
+  font-family: 微軟正黑體,Arial,sans-serif;
+  z-index: 0;
+  // background: url(../img/guide/05.jpg) center top no-repeat;
+}
+
+// #wrapper 
+#wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  min-height: 100%;
+  min-width: 320px!important;
+  overflow: hidden;
+  z-index: 2;
+}
+main[role=main]{
+  display: block;
+}
+.title{
+  text-align: center;
+  margin-bottom: 159px;
+  line-height: 1;
+  @include screen(767px) {
+    margin-bottom: 12%;
+  }
+}
+h2{
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  text-align: center;
+  font-family: 'Noto Serif TC', serif;
+  @include screen(767px) {
+    font-size: 9vw;
+  }
+}

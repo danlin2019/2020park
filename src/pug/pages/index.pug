@@ -1,0 +1,18 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include ../components/head.pug
+    link(rel='stylesheet', href='css/index.css')
+  body
+    div#wrapper
+      //- include ../components/header.pug
+      //kv
+      include ../section/kv.pug
+      //contact
+      include ../section/contact.pug
+      // footer
+      //- include ../components/footer.pug
+
+    // javascript
+    script(src='js/vendors.js')
+    script(src='js/index.js')

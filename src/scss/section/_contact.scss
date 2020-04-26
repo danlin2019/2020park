@@ -1,0 +1,182 @@
+#contact{ 
+  padding: 117px 0 89px 0;
+  background: url(../img/contact-bg.jpg) top left no-repeat;
+  background-size: cover;
+  .container{
+    width: 90%;
+    max-width: 1462px;
+    margin: auto;
+  }
+  .icon{
+    width: 100%;
+    max-width: 94px;
+    margin-bottom: 38px;
+  }
+  h4{
+    font-size: 30px;
+    color: #474747;
+    margin-right: 21px;
+  }
+
+  li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-bottom: 42px;
+    input,select,textarea{
+      width: calc(100% - 178px);
+    }
+    &.textarea-inout{
+      align-items: baseline;
+    }
+  }
+  .form-box{
+    form{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      flex-wrap: wrap;
+    }
+    ul{
+      width: 48%;
+      max-width: 730px;
+    }
+  }
+  .checkbox{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    input{
+      box-shadow:none;
+      width: auto;
+      height: auto;
+      margin-right: 10px;
+    }
+  }
+  .checkbox{
+    input{
+      display: none;
+    }
+  }
+  // 起始
+  input[type='checkbox']+label {
+    display: inline-block;
+    width: auto;
+    height: 30px;
+    padding: 0 5px 0 33px;
+    outline: 0;
+    transition: all 0.2s;
+    cursor: pointer;
+    position: relative;
+    &:before {
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      border-radius: 3px;
+      border: solid 1px #b9b9b9;
+      background-color: #ffffff;
+      content: "";
+    }
+  
+    span {
+      position: relative;
+      display: block;
+      top: 5px;
+      width: 100%;
+    }
+  }
+  
+  input[type='checkbox']:checked+label {
+    // color: #000;
+  }
+  
+  //點下
+  input[type='checkbox']:checked+label:after {
+    width: 19px !important;
+    height: 19px !important;
+    background: url(../img/chenck.png) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top: 3px ;
+    left: 3px;
+    content: "";
+  }
+  .buttom-send{
+    transition: background-color .4s;
+    position: relative;
+    text-align: center;
+    max-width: 529px;
+    width: 80%;
+    line-height: 52px;
+    border-radius: 3px;
+    background-color: #474747;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 23px;
+    &::after{
+      width: 51px;
+      height: 17px;
+      display: block;
+      margin-left: 10px;
+      content: '';
+      background:url(../img/arrw.svg) no-repeat;
+      background-size: cover;
+    }
+    &:hover{
+      background-color: #cd161a;
+    }
+  }
+  @include screen(767px) {
+    padding: 14% 0 14% 0;
+    .icon{
+      max-width: 60px;
+      margin-bottom: 18px;
+    }
+    .form-box form{
+      display: block;
+    }
+    h4{
+      font-size: 3.8vw;
+      margin-right: 3px;
+    }
+    .form-box ul{
+      width: 100%;
+    }
+    li{
+      margin-bottom: 27px;
+      input,select,textarea{
+        width: calc(100% - 30%);
+        border-radius: initial;
+      }
+    }
+    .checkbox{
+      margin-top: 11%;
+      margin-bottom: 5%;
+      font-size: 3.6vw;
+    }
+    .buttom-send{
+      font-size: 4.4vw;
+      line-height: 45px;
+      &:after{
+        width: 34px;
+        height: 11px;
+      }
+    }
+  }
+
+}
+

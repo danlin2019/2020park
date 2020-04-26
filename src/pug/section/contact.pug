@@ -1,0 +1,32 @@
+section#contact
+  .container
+    .title
+      img.icon(src="img/content-icon.png")
+      h2 預約賞屋
+    .form-box
+      form(action="")
+        ul.left-box
+          li
+            h4 *您的姓名
+            input(type="text")
+          li
+            h4 *您的電話
+            input(type="tel")
+          li
+            h4 您的信箱
+            input(type="email")
+        ul.right-box
+          li
+            h4 *預約時段
+            select
+              option(value="上午") 上午
+              option(value="中午") 中午
+              option(value="下午") 下午
+          li.textarea-inout
+            h4 其他需求
+            textarea(name="", cols="30", rows="10")
+        .checkbox
+          input#d_1(type='checkbox')
+          label(for='d_1')
+            span 本人已知悉個人資料蒐集聲明事項
+        a.buttom-send(href="javascript:;") 送 出 表 單

@@ -1,0 +1,29 @@
+// 全站功能用
+@charset 'utf-8';
+
+// base
+@import "base/_normalize.min.scss";
+
+// components
+@import "components/_buttom.scss";
+
+// variables mixin
+@import "abstracts/_variable.scss";
+@import "abstracts/_mixin.scss";
+@import "abstracts/_animation.scss";
+
+// layout
+@import "layout/_header.scss";
+@import "layout/_menu.scss";
+@import "layout/_footer.scss";
+@import "layout/_share.scss";
+
+//section
+@import "section/_kv.scss";
+@import "section/_contact.scss";
+
+// plugins
+
+// slick
+@import "plugins/slick.scss";
+@import "plugins/slick-theme.scss";
